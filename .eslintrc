@@ -1,0 +1,40 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true,
+        "es6": true
+    },
+    "globals": {
+        "Ext": true,
+        "i18next": true,
+        "LanguageDetector": true,
+        "Backend": true,
+        "LocalStorageBackend": true,
+        "HTTPBackend": true,
+        "_defaults": true
+      },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "rules": {
+        "indent": [
+            "error",
+            4
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ]
+    }
+}

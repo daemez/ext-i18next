@@ -1,0 +1,67 @@
+{
+    "name": "@daemez/ext-i18next",
+    "version": "0.1.0",
+    "description": "i18next for Ext JS",
+    "sencha": {
+        "name": "i18next",
+        "type": "code",
+        "alternateName": [
+            "daemez-i18next"
+        ],
+        "creator": "Daemez Solutions",
+        "summary": "Ext JS i18next",
+        "detailedDescription": "i18next for Ext JS locale for localization to a local language",
+        "version": "0.1.0",
+        "compatVersion": "0.1.0",
+        "format": "1",
+        "output": "${package.dir}/extjs/build",
+        "local": true,
+        "classpath": "${package.dir}/extjs/src",
+        "overrides": "${package.dir}/extjs/overrides",
+        "resource": {
+            "paths": [
+                "${package.dir}/extjs/resources"
+            ]
+        },
+        "sass": {
+            "namespace": "Daemez",
+            "etc": "${package.dir}/extjs/sass/etc/all.scss",
+            "var": "${package.dir}/extjs/sass/var",
+            "src": "${package.dir}/extjs/sass/src"
+        },
+        "extTier": "pro"
+    },
+    "main": "src/index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/daemez/ext-i18next"
+    },
+    "keywords": [
+        "Daemez",
+        "Ext",
+        "i18next",
+        "internationalization",
+        "i18n",
+        "translation",
+        "localization"
+    ],
+    "author": "Oscar Gimenez",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/daemez/ext-i18next/issues"
+    },
+    "homepage": "https://github.com/daemez/ext-i18next#readme",
+    "dependencies": {
+        "i18next": "^20.2.2",
+        "i18next-browser-languagedetector": "^6.1.0",
+        "i18next-chained-backend": "^2.1.0",
+        "i18next-http-backend": "^1.2.2",
+        "i18next-localstorage-backend": "^3.1.2"
+    },
+    "devDependencies": {
+        "eslint": "^7.26.0"
+    },
+    "scripts": {
+        "lint": "eslint ."
+    }
+}

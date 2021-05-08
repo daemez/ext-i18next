@@ -1,0 +1,211 @@
+{
+    "date": {
+        "january": "Gener",
+        "february": "Febrer",
+        "march": "Març",
+        "april": "Abril",
+        "may": "Maig",
+        "june": "Juny",
+        "july": "Juliol",
+        "august": "Agost",
+        "september": "Setembre",
+        "october": "Octubre",
+        "november": "Novembre",
+        "december": "Desembre",
+        "januaryShort": "Gen",
+        "februaryShort": "Feb",
+        "marchShort": "Mar",
+        "aprilShort": "Abr",
+        "mayShort": "Mai",
+        "juneShort": "Jun",
+        "julyShort": "Jul",
+        "augustShort": "Ago",
+        "septemberShort": "Set",
+        "octoberShort": "Oct",
+        "novemberShort": "Nov",
+        "decemberShort": "Des",
+        "sunday": "Diumenge",
+        "monday": "Dilluns",
+        "tuesday": "Dimarts",
+        "wednesday": "Dimecres",
+        "thursday": "Dijous",
+        "friday": "Divendres",
+        "saturday": "Dissabte",
+        "defaultFormat": "d/m/Y",
+        "defaultTimeFormat": "H:i:s",
+        "formatCodes": {
+            "a": "(this.getHours() < 12 ? 'a.m.' : 'p.m.')",
+            "A": "(this.getHours() < 12 ? 'A.M.' : 'P.M.')"
+        },
+        "parseCodes": {
+            "A": {
+                "g": "1",
+                "c": "if (/(a\\\\.?m\\\\.?)/i.test(results[{0}])) { if (!h || h == 12) { h = 0; }} else { if (!h || h < 12) { h = (h || 0) + 12; }}",
+                "s": "(A\\\\.?M\\\\.?|P\\\\.?M\\\\.?|a\\\\.?m\\\\.?|p\\\\.?m\\\\.?)"
+            },
+            "S": {
+                "s": "(?:st|nd|rd|th)"
+            }
+        }
+    },
+    "format": {
+        "thousandSeparator": ".",
+        "decimalSeparator": ",",
+        "currencySign": "€",
+        "dateFormat": "d/m/Y"
+    },
+    "panel": {
+        "ok": "OK",
+        "abort": "Avortar",
+        "retry": "Torna-ho a provar",
+        "ignore": "Ignora",
+        "yes": "Sí",
+        "no": "No",
+        "cancel": "Cancel·lar",
+        "apply": "Aplicar",
+        "save": "Desa",
+        "submit": "Enviar",
+        "help": "Ajuda",
+        "close": "Tanca",
+        "closeToolText": "Tanca el tauler",
+        "date": {
+            "nextText": "Mes proper (Control+Dreta)",
+            "prevText": "Mes anterior (Control+Esquerre)",
+            "footerTodayButton": "Avui"
+        },
+        "collapser": {
+            "collapseToolText": "Replega el tauler",
+            "expandToolText": "Desplega el tauler"
+        }
+    },
+    "picker": {
+        "date": {
+            "doneButton": "Fet",
+            "monthText": "Mes",
+            "dayText": "Dia",
+            "yearText": "Any"
+        },
+        "picker": {
+            "doneButton": "Fet",
+            "cancelButton": "Cancel·lar"
+        }
+    },
+    "field": {
+        "field": {
+            "requiredMessage": "Aquest camp és obligatori",
+            "validationMessage": "Té un format incorrecte"
+        },
+        "number": {
+            "decimalsText": "El nombre màxim decimal és {0}",
+            "minValueText": "El valor mínim d’aquest camp és {0}",
+            "maxValueText": "El valor màxim d’aquest camp és {0}",
+            "badFormatMessage": "El valor no és un número vàlid"
+        },
+        "text": {
+            "badFormatMessage": "El valor no coincideix amb el format requerit",
+            "requiredMessage": "Aquest camp és obligatori",
+            "validationMessage": "Té un format incorrecte"
+        },
+        "fileButton": "Navega...",
+        "date": {
+            "minDateMessage": "La data en aquest camp ha de ser igual o posterior a {0}",
+            "maxDateMessage": "La data en aquest camp ha de ser igual o anterior a {0}"
+        }
+    },
+    "dialog": {
+        "maximizeTool": "Maximitza a pantalla completa",
+        "restoreTool": "Restaura la mida original"
+    },
+    "dataview": {
+        "list": {
+            "loadingText": "Carregant..."
+        },
+        "emptyText": {
+            "html": "No hi ha dades per mostrar "
+        },
+        "abstract": {
+            "loadingText": "Carregant..."
+        },
+        "plugin": {
+            "listPaging": {
+                "loadMoreText": "Carrega més",
+                "noMoreRecordsText": "No hi ha més registres"
+            }
+        },
+        "dataview": {
+            "emptyText": " "
+        }
+    },
+    "loadMask": "Carregant...",
+    "grid": {
+        "menu": {
+            "sortAsc": "Ordena ascendent",
+            "sortDesc": "Ordena descendent",
+            "groupByThis": "Agrupa per aquest camp",
+            "showInGroups": "Mostra en grups",
+            "columns": "Columnes"
+        },
+        "filters": {
+            "menu": "Filtre"
+        },
+        "locked": {
+            "grid": {
+                "columnMenu": {
+                    "region": "Bloquejat"
+                },
+                "regions": {
+                    "left": "Bloquejat (esquerra)",
+                    "center": "Desbloquejat",
+                    "right": "Bloquejat (dreta)"
+                }
+            }
+        },
+        "plugin": {
+            "rowDragDrop": {
+                "dragText": "{0} files seleccionades"
+            }
+        }
+    },
+    "data": {
+        "validator": {
+            "presence": "Ha d’estar present",
+            "format": "Té un format incorrecte",
+            "email": "No és una adreça electrònica vàlida",
+            "phone": "No és un número de telèfon vàlid",
+            "number": "No és un número vàlid",
+            "url": "No és un URL vàlid",
+            "range": {
+                "nanMessage": "Ha de ser numèric",
+                "minOnlyMessage": "Ha de ser com a mínim {0}",
+                "maxOnlyMessage": "No ha de ser més de {0}",
+                "bothMessage": "Ha de ser entre {0} i {1}"
+            },
+            "bound": {
+                "emptyMessage": "Ha d’estar present",
+                "minOnlyMessage": "El valor ha de ser superior a {0}",
+                "maxOnlyMessage": "El valor ha de ser inferior a {0}",
+                "bothMessage": "El valor ha d'estar entre {0} i {1}"
+            },
+            "cidrv4": "No és un bloc CIDR vàlid",
+            "cidrv6": "No és un bloc CIDR vàlid",
+            "currency": "No és un import de moneda vàlid",
+            "dateTime": "No és una data i hora vàlides",
+            "exclusion": "És un valor que s’ha exclòs",
+            "ipAddress": "No és una adreça IP vàlida",
+            "inclusion": "No apareix a la llista de valors acceptables",
+            "time": "No és una hora vàlida",
+            "date": "No és una data vàlida",
+            "minOnlyMessage": "La longitud ha de ser com a mínim de {0}",
+            "maxOnlyMessage": "La longitud no ha de ser superior a {0}",
+            "bothMessage": "La longitud no pot estar entre {0} i {1}"
+        }
+    },
+    "ux": {
+        "colorpick": {
+            "selector": {
+                "okButtonText": "D'acord",
+                "cancelButtonText": "Cancel·lar"
+            }
+        }
+    }
+}

@@ -1,0 +1,211 @@
+{
+    "date": {
+        "january": "Enero",
+        "february": "Febrero",
+        "march": "Marzo",
+        "april": "Abril",
+        "may": "Mayo",
+        "june": "Junio",
+        "july": "Julio",
+        "august": "Agosto",
+        "september": "Septiembre",
+        "october": "Octubre",
+        "november": "Noviembre",
+        "december": "Diciembre",
+        "januaryShort": "Ene",
+        "februaryShort": "Feb",
+        "marchShort": "Mar",
+        "aprilShort": "Abr",
+        "mayShort": "May",
+        "juneShort": "Jun",
+        "julyShort": "Jul",
+        "augustShort": "Ago",
+        "septemberShort": "Sep",
+        "octoberShort": "Oct",
+        "novemberShort": "Nov",
+        "decemberShort": "Dic",
+        "sunday": "Domingo",
+        "monday": "Lunes",
+        "tuesday": "Martes",
+        "wednesday": "Miércoles",
+        "thursday": "Jueves",
+        "friday": "Viernes",
+        "saturday": "Sábado",
+        "defaultFormat": "d/m/Y",
+        "defaultTimeFormat": "H:i:s",
+        "formatCodes": {
+            "a": "(this.getHours() < 12 ? 'a.m.' : 'p.m.')",
+            "A": "(this.getHours() < 12 ? 'A.M.' : 'P.M.')"
+        },
+        "parseCodes": {
+            "A": {
+                "g": "1",
+                "c": "if (/(a\\\\.?m\\\\.?)/i.test(results[{0}])) { if (!h || h == 12) { h = 0; }} else { if (!h || h < 12) { h = (h || 0) + 12; }}",
+                "s": "(A\\\\.?M\\\\.?|P\\\\.?M\\\\.?|a\\\\.?m\\\\.?|p\\\\.?m\\\\.?)"
+            },
+            "S": {
+                "s": "(?:st|nd|rd|th)"
+            }
+        }
+    },
+    "format": {
+        "thousandSeparator": ".",
+        "decimalSeparator": ",",
+        "currencySign": "€",
+        "dateFormat": "d/m/Y"
+    },
+    "panel": {
+        "ok": "OK",
+        "abort": "Abortar",
+        "retry": "Volver a procesar",
+        "ignore": "Ignorar",
+        "yes": "Si",
+        "no": "No",
+        "cancel": "Cancelar",
+        "apply": "Aplicar",
+        "save": "Guardar",
+        "submit": "Enviar",
+        "help": "Ayuda",
+        "close": "Cerrar",
+        "closeToolText": "Cerrar panel",
+        "date": {
+            "nextText": "Mes próximo (Control+Derecha)",
+            "prevText": "Mes anterior (Control+Izquierda)",
+            "footerTodayButton": "Hoy"
+        },
+        "collapser": {
+            "collapseToolText": "Contraer panel",
+            "expandToolText": "Expandir panel"
+        }
+    },
+    "picker": {
+        "date": {
+            "doneButton": "Hecho",
+            "monthText": "Mes",
+            "dayText": "Día",
+            "yearText": "Año"
+        },
+        "picker": {
+            "doneButton": "Hecho",
+            "cancelButton": "Cancelar"
+        }
+    },
+    "field": {
+        "field": {
+            "requiredMessage": "Este campo es obligatorio",
+            "validationMessage": "Está en el formato incorrecto"
+        },
+        "number": {
+            "decimalsText": "El número máximo de decimales es {0}.",
+            "minValueText": "El valor mínimo para este campo es (0)",
+            "maxValueText": "El valor máximo para este campo es {0}",
+            "badFormatMessage": "El valor no es un número válido"
+        },
+        "text": {
+            "badFormatMessage": "El valor no coincide con el formato requerido",
+            "requiredMessage": "Este campo es requerido",
+            "validationMessage": "Está en el formato incorrecto"
+        },
+        "fileButton": "Navegar...",
+        "date": {
+            "minDateMessage": "La fecha en este campo debe ser igual o posterior {0}",
+            "maxDateMessage": "La fecha de este campo debe ser igual o anterior a {0}"
+        }
+    },
+    "dialog": {
+        "maximizeTool": "Maximizar a pantalla completa",
+        "restoreTool": "Restaurar al tamaño original"
+    },
+    "dataview": {
+        "list": {
+            "loadingText": "Cargando..."
+        },
+        "emptyText": {
+            "html": "No hay datos para mostrar"
+        },
+        "abstract": {
+            "loadingText": "Cargando..."
+        },
+        "plugin": {
+            "listPaging": {
+                "loadMoreText": "Carga más",
+                "noMoreRecordsText": "No más registros"
+            }
+        },
+        "dataview": {
+            "emptyText": " "
+        }
+    },
+    "loadMask": "Cargando...",
+    "grid": {
+        "menu": {
+            "sortAsc": "Orden ascendente",
+            "sortDesc": "Orden descendiente",
+            "groupByThis": "Agrupar por este campo",
+            "showInGroups": "Mostrar en grupos",
+            "columns": "Columnas"
+        },
+        "filters": {
+            "menu": "Filtrar"
+        },
+        "locked": {
+            "grid": {
+                "columnMenu": {
+                    "region": "Bloqueado"
+                },
+                "regions": {
+                    "left": "Bloqueado (Izquierda)",
+                    "center": "Desbloqueado",
+                    "right": "Bloqueado (Derecha)"
+                }
+            }
+        },
+        "plugin": {
+            "rowDragDrop": {
+                "dragText": "{0} fila(s) seleccionada(s)"
+            }
+        }
+    },
+    "data": {
+        "validator": {
+            "presence": "Debe estar presente",
+            "format": "Está en el formato incorrecto",
+            "email": "No es una dirección de correo electrónico válida",
+            "phone": "No es un número de teléfono válido",
+            "number": "No es un número válido",
+            "url": "No es una URL válida",
+            "range": {
+                "nanMessage": "Debe ser numérico",
+                "minOnlyMessage": "Debe ser al menos {0}",
+                "maxOnlyMessage": "No debe ser más que {0}",
+                "bothMessage": "Debe estar entre {0} y {1}"
+            },
+            "bound": {
+                "emptyMessage": "Debe estar presente",
+                "minOnlyMessage": "El valor debe ser mayor que {0}",
+                "maxOnlyMessage": "El valor debe ser menor que {0}",
+                "bothMessage": "El valor debe estar entre {0} y {1}"
+            },
+            "cidrv4": "No es un bloque CIDR válido",
+            "cidrv6": "No es un bloque CIDR válido",
+            "currency": "No es una cantidad de moneda válida",
+            "dateTime": "No es una fecha y hora válidas",
+            "exclusion": "Es un valor que ha sido excluido",
+            "ipAddress": "No es una dirección IP válida",
+            "inclusion": "No está en la lista de valores aceptables",
+            "time": "No es una hora válida",
+            "date": "No es una fecha válida",
+            "minOnlyMessage": "La longitud debe ser de al menos {0}",
+            "maxOnlyMessage": "La longitud no debe superar los {0}",
+            "bothMessage": "La longitud no debe estar entre {0} y {1}"
+        }
+    },
+    "ux": {
+        "colorpick": {
+            "selector": {
+                "okButtonText": "OK",
+                "cancelButtonText": "Cancelar"
+            }
+        }
+    }
+}

@@ -1,0 +1,211 @@
+{
+    "date": {
+        "january": "January",
+        "february": "February",
+        "march": "March",
+        "april": "April",
+        "may": "May",
+        "june": "June",
+        "july": "July",
+        "august": "August",
+        "september": "September",
+        "october": "October",
+        "november": "November",
+        "december": "December",
+        "januaryShort": "Jan",
+        "februaryShort": "Feb",
+        "marchShort": "Mar",
+        "aprilShort": "Apr",
+        "mayShort": "May",
+        "juneShort": "Jun",
+        "julyShort": "Jul",
+        "augustShort": "Aug",
+        "septemberShort": "Sep",
+        "octoberShort": "Oct",
+        "novemberShort": "Nov",
+        "decemberShort": "Dec",
+        "sunday": "Sunday",
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday",
+        "defaultFormat": "m/d/Y",
+        "defaultTimeFormat": "h:i a",
+        "formatCodes": {
+            "a": "(this.getHours() < 12 ? 'a.m.' : 'p.m.')",
+            "A": "(this.getHours() < 12 ? 'A.M.' : 'P.M.')"
+        },
+        "parseCodes": {
+            "A": {
+                "g": "1",
+                "c": "if (/(am)/i.test(results[{0}])) { if (!h || h == 12) { h = 0; }} else { if (!h || h < 12) { h = (h || 0) + 12; }}",
+                "s": "(am|pm|AM|PM)"
+            },
+            "S": {
+                "s": "(?:st|nd|rd|th)"
+            }
+        }
+    },
+    "format": {
+        "thousandSeparator": ",",
+        "decimalSeparator": ".",
+        "currencySign": "$",
+        "dateFormat": "m/d/Y"
+    },
+    "panel": {
+        "ok": "OK",
+        "abort": "Abort",
+        "retry": "Retry",
+        "ignore": "Ignore",
+        "yes": "Yes",
+        "no": "No",
+        "cancel": "Cancel",
+        "apply": "Apply",
+        "save": "Save",
+        "submit": "Submit",
+        "help": "Help",
+        "close": "Close",
+        "closeToolText": "Close panel",
+        "date": {
+            "nextText": "Next month (Control+Right)",
+            "prevText": "Previous month (Control+Left)",
+            "footerTodayButton": "Today"
+        },
+        "collapser": {
+            "collapseToolText": "Collapse panel",
+            "expandToolText": "Expand panel"
+        }
+    },
+    "picker": {
+        "date": {
+            "doneButton": "Done",
+            "monthText": "Month",
+            "dayText": "Day",
+            "yearText": "Year"
+        },
+        "picker": {
+            "doneButton": "Done",
+            "cancelButton": "Cancel"
+        }
+    },
+    "field": {
+        "field": {
+            "requiredMessage": "This field is required",
+            "validationMessage": "Is in the wrong format"
+        },
+        "number": {
+            "decimalsText": "The maximum decimal places is {0}",
+            "minValueText": "The minimum value for this field is {0}",
+            "maxValueText": "The maximum value for this field is {0}",
+            "badFormatMessage": "Value is not a valid number"
+        },
+        "text": {
+            "badFormatMessage": "Value does not match the required format",
+            "requiredMessage": "This field is required",
+            "validationMessage": "Is in the wrong format"
+        },
+        "fileButton": "Browse...",
+        "date": {
+            "minDateMessage": "The date in this field must be equal to or after {0}",
+            "maxDateMessage": "The date in this field must be equal to or before {0}"
+        }
+    },
+    "dialog": {
+        "maximizeTool": "Maximize to fullscreen",
+        "restoreTool": "Restore to original size"
+    },
+    "dataview": {
+        "list": {
+            "loadingText": "Loading..."
+        },
+        "emptyText": {
+            "html": "No data to display"
+        },
+        "abstract": {
+            "loadingText": "Loading..."
+        },
+        "plugin": {
+            "listPaging": {
+                "loadMoreText": "Load more",
+                "noMoreRecordsText": "No more records"
+            }
+        },
+        "dataview": {
+            "emptyText": " "
+        }
+    },
+    "loadMask": "Loading...",
+    "grid": {
+        "menu": {
+            "sortAsc": "Sort ascending",
+            "sortDesc": "Sort descending",
+            "groupByThis": "Group by this field",
+            "showInGroups": "Show in groups",
+            "columns": "Columns"
+        },
+        "filters": {
+            "menu": "Filter"
+        },
+        "locked": {
+            "grid": {
+                "columnMenu": {
+                    "region": "Locked"
+                },
+                "regions": {
+                    "left": "Locked (Left)",
+                    "center": "Unlocked",
+                    "right": "Locked (Right)"
+                }
+            }
+        },
+        "plugin": {
+            "rowDragDrop": {
+                "dragText": "{0} selected row(s)"
+            }
+        }
+    },
+    "data": {
+        "validator": {
+            "presence": "Must be present",
+            "format": "Is in the wrong format",
+            "email": "Is not a valid email address",
+            "phone": "Is not a valid phone number",
+            "number": "It is not a valid number",
+            "url": "Is not a valid URL",
+            "range": {
+                "nanMessage": "Must be numeric",
+                "minOnlyMessage": "Must be at least {0}",
+                "maxOnlyMessage": "Must be no more than {0}",
+                "bothMessage": "Must be between {0} and {1}"
+            },
+            "bound": {
+                "emptyMessage": "Must be present",
+                "minOnlyMessage": "Value must be greater than {0}",
+                "maxOnlyMessage": "Value must be less than {0}",
+                "bothMessage": "Value must be between {0} and {1}"
+            },
+            "cidrv4": "Is not a valid CIDR block",
+            "cidrv6": "Is not a valid CIDR block",
+            "currency": "It is not a valid currency amount",
+            "dateTime": "Is not a valid date and time",
+            "exclusion": "Is a value that has been excluded",
+            "ipAddress": "Is not a valid IP address",
+            "inclusion": "Is not in the list of acceptable values",
+            "time": "Is not a valid time",
+            "date": "Is not a valid date",
+            "minOnlyMessage": "Length must be at least {0}",
+            "maxOnlyMessage": "Length must be no more than {0}",
+            "bothMessage": "The length must not be between {0} and {1}"
+        }
+    },
+    "ux": {
+        "colorpick": {
+            "selector": {
+                "okButtonText": "OK",
+                "cancelButtonText": "Cancel"
+            }
+        }
+    }
+}
