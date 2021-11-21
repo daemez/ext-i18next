@@ -13,7 +13,7 @@
         "LocalStorageBackend": true,
         "HTTPBackend": true,
         "_defaults": true
-      },
+    },
     "extends": "eslint:recommended",
     "parserOptions": {
         "ecmaVersion": 12,
