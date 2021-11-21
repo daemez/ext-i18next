@@ -1,7 +1,7 @@
 /**
  * i18next Translation
  */
-Ext.onReady(function() {
+Ext.i18nextDate = (function() {
 
     if (Ext.Date) {
         Ext.Date.monthNames = [
@@ -80,6 +80,7 @@ Ext.onReady(function() {
             thousandSeparator: i18next.t('extjs:format.thousandSeparator'),
             decimalSeparator: i18next.t('extjs:format.decimalSeparator'),
             currencySign: i18next.t('extjs:format.currencySign'),
+            defaultDateFormat: i18next.t('extjs:format.dateFormat'),
             dateFormat: i18next.t('extjs:format.dateFormat')
         });
     }
