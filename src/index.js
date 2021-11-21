@@ -7,6 +7,7 @@ _defaults = require('./utils.js').defaults;
 
 const getDefaults = () => {
     return {
+        initImmediate: false,
         fallbackLng: ['en'],
         ns: ['translation', 'extjs'],
         defaultNS: 'translation',
