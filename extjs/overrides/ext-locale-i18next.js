@@ -84,7 +84,7 @@ Ext.i18nextDate = (function() {
             dateFormat: i18next.t('extjs:format.dateFormat')
         });
     }
-});
+})();
 
 Ext.define('Ext.locale.i18next.Panel', {
     override: 'Ext.Panel',
