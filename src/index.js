@@ -1,13 +1,14 @@
-i18next = require('i18next').default;
+i18next = require('i18next');
 LanguageDetector = require('i18next-browser-languagedetector').default;
 Backend = require('i18next-chained-backend').default;
 LocalStorageBackend = require('i18next-localstorage-backend').default;
-HTTPBackend = require('i18next-http-backend').default;
+HTTPBackend = require('i18next-http-backend');
 _defaults = require('./utils.js').defaults;
 
 const getDefaults = () => {
     return {
         initImmediate: false,
+        load: 'languageOnly',
         fallbackLng: ['en'],
         ns: ['translation', 'extjs'],
         defaultNS: 'translation',
