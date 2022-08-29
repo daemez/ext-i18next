@@ -33,6 +33,7 @@
         "saturday": "Sábado",
         "defaultFormat": "d/m/Y",
         "defaultTimeFormat": "H:i:s",
+        "firstDayOfWeek": "1",
         "formatCodes": {
             "a": "(this.getHours() < 12 ? 'a.m.' : 'p.m.')",
             "A": "(this.getHours() < 12 ? 'A.M.' : 'P.M.')"

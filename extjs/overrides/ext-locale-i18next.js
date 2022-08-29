@@ -60,6 +60,7 @@ Ext.i18nextDate = (function() {
         Ext.Date.defaultFormat = i18next.t('extjs:date.defaultFormat');
         Ext.Date.defaultTimeFormat = i18next.t('extjs:date.defaultTimeFormat');
         Ext.Date.defaultFullFormat = Ext.Date.defaultFormat + ' ' + Ext.Date.defaultTimeFormat;
+        Ext.Date.firstDayOfWeek = i18next.t('extjs:date.firstDayOfWeek');
 
         Ext.Date.formatCodes.a = i18next.t('extjs:date.formatCodes.a');
         Ext.Date.formatCodes.A = i18next.t('extjs:date.formatCodes.A');
