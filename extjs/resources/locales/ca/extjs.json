@@ -144,7 +144,13 @@
             "sortDesc": "Ordena descendent",
             "groupByThis": "Agrupa per aquest camp",
             "showInGroups": "Mostra en grups",
-            "columns": "Columnes"
+            "columns": "Columnes",
+            "addGroup": "Afegeix a l'agrupació",
+            "removeGroup": "Elimina de l'agrupació",
+            "groups": "Grups"
+        },
+        "column": {
+            "groups": "Grups"
         },
         "filters": {
             "menu": "Filtre"
@@ -164,7 +170,39 @@
         "plugin": {
             "rowDragDrop": {
                 "dragText": "{0} files seleccionades"
+            },
+            "filterbar": {
+                "operator": {
+                    "eq": "Igual a",
+                    "ne": "Diferent de",
+                    "gt": "Més gran que",
+                    "ge": "Més gran o igual a",
+                    "lt": "Més petit que",
+                    "le": "Més petit o igual a",
+                    "like": "Conté",
+                    "nlike": "No conté",
+                    "empty": "Buit",
+                    "nempty": "No buit",
+                    "identical": "Idèntic",
+                    "nidentical": "No idèntic",
+                    "regex": "Expressió regular",
+                    "in": "Està a",
+                    "notin": "No està a"
+                }
+            },
+            "grouping": {
+                "panel": {
+                    "emptyText": "Arrossegueu una columna aquí per agrupar",
+                    "groupText": "Grup"
+                }
+            },
+            "summaries": {
+                "text": "Resum"
             }
+        },
+        "treeGrouped": {
+            "expandAllText": "Expandeix tot",
+            "collapseAllText": "Contrau tot"
         }
     },
     "data": {

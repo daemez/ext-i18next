@@ -524,3 +524,98 @@ Ext.define('Ext.locale.i18next.grid.plugin.RowDragDrop', {
 
     dragText: i18next.t('extjs:grid.plugin.rowDragDrop.dragText')
 });
+
+// New in ExtJS 7.x
+Ext.define('Ext.locale.i18next.grid.menu.AddGroup', {
+    override: 'Ext.grid.menu.AddGroup',
+
+    config: {
+        text: i18next.t('extjs:grid.menu.addGroup')
+    }
+});
+
+Ext.define('Ext.locale.i18next.grid.menu.RemoveGroup', {
+    override: 'Ext.grid.menu.RemoveGroup',
+
+    config: {
+        text: i18next.t('extjs:grid.menu.removeGroup')
+    }
+});
+
+Ext.define('Ext.locale.i18next.grid.menu.Groups', {
+    override: 'Ext.grid.menu.Groups',
+
+    config: {
+        text: i18next.t('extjs:grid.menu.groups')
+    }
+});
+
+Ext.define('Ext.locale.i18next.grid.column.Groups', {
+    override: 'Ext.grid.column.Groups',
+
+    config: {
+        text: i18next.t('extjs:grid.column.groups')
+    }
+});
+
+Ext.define('Ext.locale.i18next.grid.plugin.filterbar.Operator', {
+    override: 'Ext.grid.plugin.filterbar.Operator',
+
+    operatorsTextMap: {
+        eq: i18next.t('extjs:grid.plugin.filterbar.operator.eq'),
+        ne: i18next.t('extjs:grid.plugin.filterbar.operator.ne'),
+        gt: i18next.t('extjs:grid.plugin.filterbar.operator.gt'),
+        ge: i18next.t('extjs:grid.plugin.filterbar.operator.ge'),
+        lt: i18next.t('extjs:grid.plugin.filterbar.operator.lt'),
+        le: i18next.t('extjs:grid.plugin.filterbar.operator.le'),
+        like: i18next.t('extjs:grid.plugin.filterbar.operator.like'),
+        nlike: i18next.t('extjs:grid.plugin.filterbar.operator.nlike'),
+        empty: i18next.t('extjs:grid.plugin.filterbar.operator.empty'),
+        nempty: i18next.t('extjs:grid.plugin.filterbar.operator.nempty'),
+        identical: i18next.t('extjs:grid.plugin.filterbar.operator.identical'),
+        nidentical: i18next.t('extjs:grid.plugin.filterbar.operator.nidentical'),
+        regex: i18next.t('extjs:grid.plugin.filterbar.operator.regex'),
+        'in': i18next.t('extjs:grid.plugin.filterbar.operator.in'),
+        notin: i18next.t('extjs:grid.plugin.filterbar.operator.notin')
+    }
+}, function() {
+    var prototype = this.prototype,
+        texts = prototype.operatorsTextMap;
+
+    texts['='] = texts.eq;
+    texts['=='] = texts.eq;
+    texts['!='] = texts.ne;
+    texts['==='] = texts.identical;
+    texts['!=='] = texts.nidentical;
+    texts['>'] = texts.gt;
+    texts['>='] = texts.ge;
+    texts['<'] = texts.lt;
+    texts['<='] = texts.le;
+    texts['/='] = texts.regex;
+});
+
+Ext.define('Ext.locale.i18next.grid.plugin.grouping.Panel', {
+    override: 'Ext.grid.plugin.grouping.Panel',
+
+    config: {
+        emptyText: i18next.t('extjs:grid.plugin.grouping.panel.emptyText'),
+        groupText: i18next.t('extjs:grid.plugin.grouping.panel.groupText')
+    }
+});
+
+Ext.define('Ext.locale.i18next.grid.plugin.Summaries', {
+    override: 'Ext.grid.plugin.Summaries',
+
+    config: {
+        text: i18next.t('extjs:grid.plugin.summaries.text')
+    }
+});
+
+Ext.define('Ext.locale.i18next.grid.TreeGrouped', {
+    override: 'Ext.grid.TreeGrouped',
+
+    config: {
+        expandAllText: i18next.t('extjs:grid.treeGrouped.expandAllText'),
+        collapseAllText: i18next.t('extjs:grid.treeGrouped.collapseAllText')
+    }
+});

@@ -144,7 +144,13 @@
             "sortDesc": "Orden descendiente",
             "groupByThis": "Agrupar por este campo",
             "showInGroups": "Mostrar en grupos",
-            "columns": "Columnas"
+            "columns": "Columnas",
+            "addGroup": "Añadir a la agrupación",
+            "removeGroup": "Eliminar de la agrupación",
+            "groups": "Grupos"
+        },
+        "column": {
+            "groups": "Grupos"
         },
         "filters": {
             "menu": "Filtrar"
@@ -164,7 +170,39 @@
         "plugin": {
             "rowDragDrop": {
                 "dragText": "{0} fila(s) seleccionada(s)"
+            },
+            "filterbar": {
+                "operator": {
+                    "eq": "Es igual",
+                    "ne": "No es igual",
+                    "gt": "Mayor que",
+                    "ge": "Mayor o igual a",
+                    "lt": "Menor que",
+                    "le": "Menor o igual a",
+                    "like": "Contiene",
+                    "nlike": "No contiene",
+                    "empty": "Vacío",
+                    "nempty": "No vacío",
+                    "identical": "Idéntico",
+                    "nidentical": "No idéntico",
+                    "regex": "Expresión regular",
+                    "in": "Está en",
+                    "notin": "No está en"
+                }
+            },
+            "grouping": {
+                "panel": {
+                    "emptyText": "Arrastre una columna aquí para agrupar",
+                    "groupText": "Grupo"
+                }
+            },
+            "summaries": {
+                "text": "Resumen"
             }
+        },
+        "treeGrouped": {
+            "expandAllText": "Expandir todo",
+            "collapseAllText": "Contraer todo"
         }
     },
     "data": {

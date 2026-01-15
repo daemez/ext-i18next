@@ -144,7 +144,13 @@
             "sortDesc": "Sort descending",
             "groupByThis": "Group by this field",
             "showInGroups": "Show in groups",
-            "columns": "Columns"
+            "columns": "Columns",
+            "addGroup": "Add to grouping",
+            "removeGroup": "Remove from grouping",
+            "groups": "Groups"
+        },
+        "column": {
+            "groups": "Groups"
         },
         "filters": {
             "menu": "Filter"
@@ -164,7 +170,39 @@
         "plugin": {
             "rowDragDrop": {
                 "dragText": "{0} selected row(s)"
+            },
+            "filterbar": {
+                "operator": {
+                    "eq": "Equal to",
+                    "ne": "Not equal to",
+                    "gt": "Greater than",
+                    "ge": "Greater than or equal to",
+                    "lt": "Less than",
+                    "le": "Less than or equal to",
+                    "like": "Contains",
+                    "nlike": "Does not contain",
+                    "empty": "Empty",
+                    "nempty": "Not empty",
+                    "identical": "Identical",
+                    "nidentical": "Not identical",
+                    "regex": "Regular expression",
+                    "in": "Is in",
+                    "notin": "Is not in"
+                }
+            },
+            "grouping": {
+                "panel": {
+                    "emptyText": "Drag a column here to group",
+                    "groupText": "Group"
+                }
+            },
+            "summaries": {
+                "text": "Summary"
             }
+        },
+        "treeGrouped": {
+            "expandAllText": "Expand all",
+            "collapseAllText": "Collapse all"
         }
     },
     "data": {
