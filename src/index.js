@@ -1,9 +1,22 @@
+/**
+ * @daemez/ext-i18next - i18next integration for Ext JS
+ * Handles ESM/CJS module interoperability automatically
+ */
+
+// Helper to handle both ESM and CJS exports
+const interop = (m) => m.default || m;
+
+// Expose i18next globally for use in Ext JS components
+// These intentionally omit const/let to create globals
+/* eslint-disable no-implicit-globals, no-undef */
 i18next = require('i18next');
-LanguageDetector = require('i18next-browser-languagedetector').default;
-Backend = require('i18next-chained-backend').default;
-LocalStorageBackend = require('i18next-localstorage-backend').default;
-HTTPBackend = require('i18next-http-backend');
-_defaults = require('./utils.js').defaults;
+LanguageDetector = interop(require('i18next-browser-languagedetector'));
+Backend = interop(require('i18next-chained-backend'));
+LocalStorageBackend = interop(require('i18next-localstorage-backend'));
+HTTPBackend = interop(require('i18next-http-backend'));
+/* eslint-enable no-implicit-globals, no-undef */
+
+const _defaults = require('./utils.js').defaults;
 
 const getDefaults = () => {
     return {
@@ -28,7 +41,7 @@ const getDefaults = () => {
                 expirationTime: 365 * 24 * 60 * 60 * 1000
             }, {
                 loadPath: (languages, namespaces) => {
-                    if (namespaces == 'extjs') {
+                    if (namespaces === 'extjs') {
                         return Ext.getResourcePath('locales/{{lng}}/{{ns}}.json', null, 'i18next');
                     }
                     return Ext.getResourcePath('locales/{{lng}}/{{ns}}.json');
@@ -38,31 +51,33 @@ const getDefaults = () => {
     };
 };
 
+let _options = {};
+
 module.exports.init = (options = {}) => {
-    this.options = _defaults(options, this.options || {}, getDefaults());
+    _options = _defaults(options, _options, getDefaults());
 
-    if (!options.backend.backends) {
-        this.options.backend.backends = getDefaults().backend.backends;
+    if (!options.backend?.backends) {
+        _options.backend.backends = getDefaults().backend.backends;
     } else {
-        this.options.backend.backends = _defaults(options.backend.backends, getDefaults().backend.backends);
+        _options.backend.backends = _defaults(options.backend.backends, getDefaults().backend.backends);
     }
 
-    if (!options.backend.backendOptions[0]) {
-        this.options.backend.backendOptions[0] = getDefaults().backend.backendOptions[0];
+    if (!options.backend?.backendOptions?.[0]) {
+        _options.backend.backendOptions[0] = getDefaults().backend.backendOptions[0];
     } else {
-        this.options.backend.backendOptions[0] = _defaults(options.backend.backendOptions[0], getDefaults().backend.backendOptions[0]);
+        _options.backend.backendOptions[0] = _defaults(options.backend.backendOptions[0], getDefaults().backend.backendOptions[0]);
     }
 
-    if (!options.backend.backendOptions[1]) {
-        this.options.backend.backendOptions[1] = getDefaults().backend.backendOptions[1];
+    if (!options.backend?.backendOptions?.[1]) {
+        _options.backend.backendOptions[1] = getDefaults().backend.backendOptions[1];
     } else {
-        this.options.backend.backendOptions[1] = _defaults(options.backend.backendOptions[1], getDefaults().backend.backendOptions[1]);
+        _options.backend.backendOptions[1] = _defaults(options.backend.backendOptions[1], getDefaults().backend.backendOptions[1]);
     }
 
     i18next
         .use(LanguageDetector)
         .use(Backend)
-        .init(this.options);
+        .init(_options);
 
     i18next.on('initialized', function () {
         i18next.on('languageChanged', function () {

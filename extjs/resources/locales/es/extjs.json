@@ -60,7 +60,7 @@
         "abort": "Abortar",
         "retry": "Volver a procesar",
         "ignore": "Ignorar",
-        "yes": "Si",
+        "yes": "Sí",
         "no": "No",
         "cancel": "Cancelar",
         "apply": "Aplicar",
@@ -98,7 +98,7 @@
         },
         "number": {
             "decimalsText": "El número máximo de decimales es {0}.",
-            "minValueText": "El valor mínimo para este campo es (0)",
+            "minValueText": "El valor mínimo para este campo es {0}",
             "maxValueText": "El valor máximo para este campo es {0}",
             "badFormatMessage": "El valor no es un número válido"
         },
