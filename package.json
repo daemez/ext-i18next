@@ -34,7 +34,7 @@
     "main": "src/index.js",
     "repository": {
         "type": "git",
-        "url": "https://github.com/daemez/ext-i18next"
+        "url": "git+https://github.com/daemez/ext-i18next.git"
     },
     "keywords": [
         "Daemez",
