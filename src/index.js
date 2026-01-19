@@ -41,7 +41,9 @@ const getDefaults = () => {
                 expirationTime: 365 * 24 * 60 * 60 * 1000
             }, {
                 loadPath: (languages, namespaces) => {
-                    if (namespaces === 'extjs') {
+                    // Handle both string and array (i18next-http-backend may pass either)
+                    const ns = Array.isArray(namespaces) ? namespaces[0] : namespaces;
+                    if (ns === 'extjs') {
                         return Ext.getResourcePath('locales/{{lng}}/{{ns}}.json', null, 'i18next');
                     }
                     return Ext.getResourcePath('locales/{{lng}}/{{ns}}.json');
