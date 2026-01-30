@@ -1,6 +1,6 @@
 {
     "name": "@daemez/ext-i18next",
-    "version": "0.4.1",
+    "version": "0.4.2",
     "description": "i18next for Ext JS",
     "sencha": {
         "name": "i18next",
@@ -11,7 +11,7 @@
         "creator": "Daemez Solutions",
         "summary": "Ext JS i18next",
         "detailedDescription": "i18next for Ext JS locale for localization to a local language",
-        "version": "0.4.1",
+        "version": "0.4.2",
         "compatVersion": "0.3.1",
         "format": "1",
         "output": "${package.dir}/extjs/build",

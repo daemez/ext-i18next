@@ -35,8 +35,8 @@
         "defaultTimeFormat": "h:i a",
         "firstDayOfWeek": "0",
         "formatCodes": {
-            "a": "(this.getHours() < 12 ? 'a.m.' : 'p.m.')",
-            "A": "(this.getHours() < 12 ? 'A.M.' : 'P.M.')"
+            "a": "(this.getHours() < 12 ? 'am' : 'pm')",
+            "A": "(this.getHours() < 12 ? 'AM' : 'PM')"
         },
         "parseCodes": {
             "A": {
