@@ -168,6 +168,11 @@
             }
         },
         "plugin": {
+            "rowOperations": {
+                "triggerText": "Selecciona",
+                "cancelText": "Fet",
+                "deleteText": "Elimina"
+            },
             "rowDragDrop": {
                 "dragText": "{0} files seleccionades"
             },

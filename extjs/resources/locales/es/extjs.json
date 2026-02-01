@@ -168,6 +168,11 @@
             }
         },
         "plugin": {
+            "rowOperations": {
+                "triggerText": "Seleccionar",
+                "cancelText": "Hecho",
+                "deleteText": "Eliminar"
+            },
             "rowDragDrop": {
                 "dragText": "{0} fila(s) seleccionada(s)"
             },
