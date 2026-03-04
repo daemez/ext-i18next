@@ -11,4 +11,4 @@ module.exports.defaults = function defaults(obj) {
         }
     });
     return obj;
-}
+};

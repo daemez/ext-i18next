@@ -1,6 +1,6 @@
 {
     "name": "@daemez/ext-i18next",
-    "version": "0.4.3",
+    "version": "1.0.0",
     "description": "i18next for Ext JS",
     "sencha": {
         "name": "i18next",
@@ -11,8 +11,8 @@
         "creator": "Daemez Solutions",
         "summary": "Ext JS i18next",
         "detailedDescription": "i18next for Ext JS locale for localization to a local language",
-        "version": "0.4.3",
-        "compatVersion": "0.3.1",
+        "version": "1.0.0",
+        "compatVersion": "1.0.0",
         "format": "1",
         "output": "${package.dir}/extjs/build",
         "local": true,
@@ -57,17 +57,21 @@
     },
     "homepage": "https://github.com/daemez/ext-i18next#readme",
     "dependencies": {
-        "i18next": ">=21.0.0",
-        "i18next-browser-languagedetector": ">=6.0.0",
-        "i18next-chained-backend": ">=3.0.0",
-        "i18next-http-backend": ">=1.0.0",
-        "i18next-localstorage-backend": ">=3.0.0"
+        "i18next": "^25.0.0",
+        "i18next-browser-languagedetector": "^8.0.0",
+        "i18next-chained-backend": "^4.0.0",
+        "i18next-http-backend": "^2.0.0",
+        "i18next-localstorage-backend": "^4.0.0"
     },
     "devDependencies": {
-        "eslint": "^9.0.0"
+        "eslint": "^9.0.0",
+        "prettier": "^3.0.0"
     },
     "scripts": {
         "lint": "eslint .",
-        "validate": "node scripts/validate-translations.js"
+        "format": "prettier --write \"**/*.{js,json}\" --ignore-path .gitignore",
+        "format:check": "prettier --check \"**/*.{js,json}\" --ignore-path .gitignore",
+        "validate": "node scripts/validate-translations.js",
+        "check": "npm run validate && npm run format:check && npm run lint"
     }
 }

@@ -14,9 +14,7 @@ const path = require('path');
 
 const LOCALES_DIR = path.resolve(__dirname, '../extjs/resources/locales');
 const CODE_DIR = path.resolve(__dirname, '../extjs/overrides');
-const LOCALES = fs.readdirSync(LOCALES_DIR).filter(
-    (d) => fs.statSync(path.join(LOCALES_DIR, d)).isDirectory()
-);
+const LOCALES = fs.readdirSync(LOCALES_DIR).filter((d) => fs.statSync(path.join(LOCALES_DIR, d)).isDirectory());
 
 let errors = 0;
 
@@ -77,16 +75,12 @@ for (const locale of LOCALES.slice(1)) {
     const keys = getKeyPaths(data[locale]);
 
     if (keys.length !== refKeys.length) {
-        error(
-            `${locale} has ${keys.length} keys, ${refLocale} has ${refKeys.length}`
-        );
+        error(`${locale} has ${keys.length} keys, ${refLocale} has ${refKeys.length}`);
     }
 
     for (let i = 0; i < Math.max(refKeys.length, keys.length); i++) {
         if (refKeys[i] !== keys[i]) {
-            error(
-                `Key mismatch at index ${i}: ${refLocale}="${refKeys[i]}" vs ${locale}="${keys[i]}"`
-            );
+            error(`Key mismatch at index ${i}: ${refLocale}="${refKeys[i]}" vs ${locale}="${keys[i]}"`);
             break;
         }
     }

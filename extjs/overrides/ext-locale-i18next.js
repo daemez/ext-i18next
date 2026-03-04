@@ -1,8 +1,7 @@
 /**
  * i18next Translation
  */
-Ext.i18nextDate = (function() {
-
+Ext.i18nextDate = (function () {
     if (Ext.Date) {
         Ext.Date.monthNames = [
             i18next.t('extjs:date.january'),
@@ -34,11 +33,11 @@ Ext.i18nextDate = (function() {
             i18next.t('extjs:date.decemberShort')
         ];
 
-        Ext.Date.getShortMonthName = function(month) {
+        Ext.Date.getShortMonthName = function (month) {
             return Ext.Date.shortMonthNames[month];
         };
 
-        Ext.Date.monthNumbers =  {};
+        Ext.Date.monthNumbers = {};
         Ext.Date.monthNumbers[i18next.t('extjs:date.januaryShort')] = 0;
         Ext.Date.monthNumbers[i18next.t('extjs:date.februaryShort')] = 1;
         Ext.Date.monthNumbers[i18next.t('extjs:date.marchShort')] = 2;
@@ -52,10 +51,8 @@ Ext.i18nextDate = (function() {
         Ext.Date.monthNumbers[i18next.t('extjs:date.novemberShort')] = 10;
         Ext.Date.monthNumbers[i18next.t('extjs:date.decemberShort')] = 11;
 
-        Ext.Date.getMonthNumber = function(name) {
-            return Ext.Date.monthNumbers[
-                name.substring(0, 1).toUpperCase() + name.substring(1, 3).toLowerCase()
-            ];
+        Ext.Date.getMonthNumber = function (name) {
+            return Ext.Date.monthNumbers[name.substring(0, 1).toUpperCase() + name.substring(1, 3).toLowerCase()];
         };
 
         Ext.Date.dayNames = [
@@ -78,7 +75,7 @@ Ext.i18nextDate = (function() {
             i18next.t('extjs:date.saturdayShort')
         ];
 
-        Ext.Date.getShortDayName = function(day) {
+        Ext.Date.getShortDayName = function (day) {
             return Ext.Date.shortDayNames[day];
         };
 
