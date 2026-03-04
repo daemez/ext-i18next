@@ -67,6 +67,7 @@
         "eslint": "^9.0.0"
     },
     "scripts": {
-        "lint": "eslint ."
+        "lint": "eslint .",
+        "validate": "node scripts/validate-translations.js"
     }
 }

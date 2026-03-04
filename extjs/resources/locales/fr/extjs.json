@@ -1,0 +1,280 @@
+{
+    "date": {
+        "january": "Janvier",
+        "february": "Février",
+        "march": "Mars",
+        "april": "Avril",
+        "may": "Mai",
+        "june": "Juin",
+        "july": "Juillet",
+        "august": "Août",
+        "september": "Septembre",
+        "october": "Octobre",
+        "november": "Novembre",
+        "december": "Décembre",
+        "januaryShort": "Janv",
+        "februaryShort": "Févr",
+        "marchShort": "Mars",
+        "aprilShort": "Avr",
+        "mayShort": "Mai",
+        "juneShort": "Juin",
+        "julyShort": "Juil",
+        "augustShort": "Août",
+        "septemberShort": "Sept",
+        "octoberShort": "Oct",
+        "novemberShort": "Nov",
+        "decemberShort": "Déc",
+        "sunday": "Dimanche",
+        "monday": "Lundi",
+        "tuesday": "Mardi",
+        "wednesday": "Mercredi",
+        "thursday": "Jeudi",
+        "friday": "Vendredi",
+        "saturday": "Samedi",
+        "sundayShort": "Dim",
+        "mondayShort": "Lun",
+        "tuesdayShort": "Mar",
+        "wednesdayShort": "Mer",
+        "thursdayShort": "Jeu",
+        "fridayShort": "Ven",
+        "saturdayShort": "Sam",
+        "defaultFormat": "d/m/Y",
+        "defaultTimeFormat": "H:i",
+        "firstDayOfWeek": "1",
+        "formatCodes": {
+            "a": "(this.getHours() < 12 ? 'am' : 'pm')",
+            "A": "(this.getHours() < 12 ? 'AM' : 'PM')"
+        },
+        "parseCodes": {
+            "A": {
+                "g": "1",
+                "c": "if (/(am)/i.test(results[{0}])) { if (!h || h == 12) { h = 0; }} else { if (!h || h < 12) { h = (h || 0) + 12; }}",
+                "s": "(am|pm|AM|PM)"
+            },
+            "S": {
+                "s": "(?:er)"
+            }
+        }
+    },
+    "format": {
+        "thousandSeparator": ".",
+        "decimalSeparator": ",",
+        "currencySign": "€",
+        "dateFormat": "d/m/Y"
+    },
+    "panel": {
+        "ok": "Ok",
+        "abort": "Arrêter",
+        "retry": "Re-essayer",
+        "ignore": "Ignorer",
+        "yes": "Oui",
+        "no": "Non",
+        "cancel": "Annuler",
+        "apply": "Appliquer",
+        "save": "Sauvegarder",
+        "submit": "Soumettre",
+        "help": "Aide",
+        "close": "Fermer",
+        "closeToolText": "Fermer la fenêtre",
+        "date": {
+            "nextText": "Mois prochain (Control+Droite)",
+            "prevText": "Mois précédent (Control+Gauche)",
+            "footerTodayButton": "Aujourd'hui"
+        },
+        "collapser": {
+            "collapseToolText": "Réduire la fenêtre",
+            "expandToolText": "Élargir la fenêtre"
+        }
+    },
+    "picker": {
+        "date": {
+            "doneButton": "Prêt",
+            "monthText": "Mois",
+            "dayText": "Jour",
+            "yearText": "Année"
+        },
+        "picker": {
+            "doneButton": "Terminé",
+            "cancelButton": "Annuler"
+        }
+    },
+    "field": {
+        "field": {
+            "requiredMessage": "Ce champ est obligatoire",
+            "validationMessage": "Ce format n'est pas le bon"
+        },
+        "number": {
+            "decimalsText": "Le nombre maximum de décimales est de {0}",
+            "minValueText": "La valeur minimale de ce champ est de {0}",
+            "maxValueText": "La valeur maximale de ce champ est de {0}",
+            "badFormatMessage": "La valeur ne correspond pas au format requis"
+        },
+        "text": {
+            "badFormatMessage": "La valeur ne correspond pas au format requis",
+            "requiredMessage": "Ce champ est obligatoire",
+            "validationMessage": "Ce format n'est pas le bon"
+        },
+        "fileButton": "Parcourir...",
+        "date": {
+            "minDateMessage": "La date indiquée dans ce champ doit être égale à ou après {0}",
+            "maxDateMessage": "La date indiquée dans ce champ doit être égale à ou avant {0}"
+        }
+    },
+    "dialog": {
+        "maximizeTool": "Agrandir en plein écran",
+        "restoreTool": "Restaurer à la taille d'origine"
+    },
+    "dataview": {
+        "list": {
+            "loadingText": "Chargement..."
+        },
+        "emptyText": {
+            "html": "Aucune donnée à afficher"
+        },
+        "abstract": {
+            "loadingText": "Chargement..."
+        },
+        "plugin": {
+            "listPaging": {
+                "loadMoreText": "Charger plus...",
+                "noMoreRecordsText": "Plus d'enregistrements"
+            }
+        },
+        "dataview": {
+            "emptyText": " "
+        }
+    },
+    "loadMask": "Chargement...",
+    "grid": {
+        "menu": {
+            "sortAsc": "Trier en ordre croissant",
+            "sortDesc": "Trier en ordre décroissant",
+            "groupByThis": "Grouper selon ce champ",
+            "showInGroups": "Montrer en groupe",
+            "columns": "Colonnes",
+            "addGroup": "Ajouter au groupement",
+            "removeGroup": "Supprimer du groupement",
+            "groups": "Groupes"
+        },
+        "column": {
+            "groups": "Groupes"
+        },
+        "filters": {
+            "menu": "Filtre"
+        },
+        "locked": {
+            "grid": {
+                "columnMenu": {
+                    "region": "Région"
+                },
+                "regions": {
+                    "left": "Verrouillé (Gauche)",
+                    "center": "Déverrouillé",
+                    "right": "Verrouillé (Droite)"
+                }
+            }
+        },
+        "plugin": {
+            "rowOperations": {
+                "triggerText": "Sélectionner",
+                "cancelText": "Terminé",
+                "deleteText": "Supprimer"
+            },
+            "rowDragDrop": {
+                "dragText": "{0} ligne(s) sélectionnée(s)"
+            },
+            "filterbar": {
+                "operator": {
+                    "eq": "Égal à",
+                    "ne": "Différent de",
+                    "gt": "Supérieur à",
+                    "ge": "Supérieur ou égal à",
+                    "lt": "Inférieur à",
+                    "le": "Inférieur ou égal à",
+                    "like": "Contient",
+                    "nlike": "Ne contient pas",
+                    "empty": "Vide",
+                    "nempty": "Non vide",
+                    "identical": "Identique",
+                    "nidentical": "Non identique",
+                    "regex": "Expression régulière",
+                    "in": "Est dans",
+                    "notin": "N'est pas dans"
+                }
+            },
+            "grouping": {
+                "panel": {
+                    "emptyText": "Glissez une colonne ici pour grouper",
+                    "groupText": "Groupe",
+                    "groupingPanelText": "Glissez un en-tête de colonne ici pour grouper par cette colonne",
+                    "showGroupingPanelText": "Afficher le panneau de groupement",
+                    "hideGroupingPanelText": "Masquer le panneau de groupement",
+                    "clearGroupText": "Effacer le groupe",
+                    "sortAscText": "Trier par ordre croissant",
+                    "sortDescText": "Trier par ordre décroissant",
+                    "moveLeftText": "Déplacer à gauche",
+                    "moveRightText": "Déplacer à droite",
+                    "moveBeginText": "Déplacer au début",
+                    "moveEndText": "Déplacer à la fin",
+                    "removeText": "Supprimer"
+                }
+            },
+            "summaries": {
+                "text": "Sommaire",
+                "textNone": "Aucun",
+                "summaryText": "Sommaire"
+            }
+        },
+        "treeGrouped": {
+            "expandAllText": "Développer tout",
+            "collapseAllText": "Réduire tout",
+            "groupSummaryTpl": "Sommaire ({name})",
+            "summaryTpl": "Sommaire ({store.data.length})"
+        }
+    },
+    "data": {
+        "summary": {
+            "count": "Compter"
+        },
+        "validator": {
+            "presence": "Présence obligatoire",
+            "format": "Ce format n'est pas le bon",
+            "email": "N'est pas une adresse email valide",
+            "phone": "N'est pas un numéro de téléphone valide",
+            "number": "N'est pas un nombre valide",
+            "url": "N'est pas une URL valide",
+            "range": {
+                "nanMessage": "Doit être un chiffre",
+                "minOnlyMessage": "Doit être au moins {0}",
+                "maxOnlyMessage": "Ne doit pas être plus que {0}",
+                "bothMessage": "Doit être entre {0} et {1}"
+            },
+            "bound": {
+                "emptyMessage": "Présence obligatoire",
+                "minOnlyMessage": "La valeur doit être supérieure à {0}",
+                "maxOnlyMessage": "La valeur doit être inférieure à {0}",
+                "bothMessage": "La valeur doit être comprise entre {0} et {1}"
+            },
+            "cidrv4": "N'est pas un bloc CIDR valide",
+            "cidrv6": "N'est pas un bloc CIDR valide",
+            "currency": "N'est pas un montant de devise valide",
+            "dateTime": "N'est pas une date et heure valide",
+            "exclusion": "Est une valeur qui a été exclue",
+            "ipAddress": "N'est pas une adresse IP valide",
+            "inclusion": "N'est pas dans la liste de valeurs acceptables",
+            "time": "N'est pas une heure valide",
+            "date": "N'est pas une date valide",
+            "minOnlyMessage": "La longueur doit être au moins {0}",
+            "maxOnlyMessage": "La longueur ne doit pas être plus que {0}",
+            "bothMessage": "La longueur doit être entre {0} et {1}"
+        }
+    },
+    "ux": {
+        "colorpick": {
+            "selector": {
+                "okButtonText": "OK",
+                "cancelButtonText": "Annuler"
+            }
+        }
+    }
+}
