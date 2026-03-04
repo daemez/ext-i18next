@@ -198,19 +198,37 @@
             "grouping": {
                 "panel": {
                     "emptyText": "Drag a column here to group",
-                    "groupText": "Group"
+                    "groupText": "Group",
+                    "groupingPanelText": "Drag a column header here to group by that column",
+                    "showGroupingPanelText": "Show group by panel",
+                    "hideGroupingPanelText": "Hide group by panel",
+                    "clearGroupText": "Clear group",
+                    "sortAscText": "Sort ascending",
+                    "sortDescText": "Sort descending",
+                    "moveLeftText": "Move left",
+                    "moveRightText": "Move right",
+                    "moveBeginText": "Move to beginning",
+                    "moveEndText": "Move to end",
+                    "removeText": "Remove"
                 }
             },
             "summaries": {
-                "text": "Summary"
+                "text": "Summary",
+                "textNone": "None",
+                "summaryText": "Summary"
             }
         },
         "treeGrouped": {
             "expandAllText": "Expand all",
-            "collapseAllText": "Collapse all"
+            "collapseAllText": "Collapse all",
+            "groupSummaryTpl": "Summary ({name})",
+            "summaryTpl": "Summary ({store.data.length})"
         }
     },
     "data": {
+        "summary": {
+            "count": "Count"
+        },
         "validator": {
             "presence": "Must be present",
             "format": "Is in the wrong format",

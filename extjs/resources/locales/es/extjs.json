@@ -198,19 +198,37 @@
             "grouping": {
                 "panel": {
                     "emptyText": "Arrastre una columna aquí para agrupar",
-                    "groupText": "Grupo"
+                    "groupText": "Grupo",
+                    "groupingPanelText": "Arrastre un encabezado de columna aquí para agrupar por esa columna",
+                    "showGroupingPanelText": "Mostrar grupo por panel",
+                    "hideGroupingPanelText": "Ocultar grupo por panel",
+                    "clearGroupText": "Limpiar grupo",
+                    "sortAscText": "Orden ascendente",
+                    "sortDescText": "Orden descendiente",
+                    "moveLeftText": "Mover a la izquierda",
+                    "moveRightText": "Mover a la derecha",
+                    "moveBeginText": "Mover al principio",
+                    "moveEndText": "Mover al final",
+                    "removeText": "Eliminar"
                 }
             },
             "summaries": {
-                "text": "Resumen"
+                "text": "Resumen",
+                "textNone": "Ninguno",
+                "summaryText": "Resumen"
             }
         },
         "treeGrouped": {
             "expandAllText": "Expandir todo",
-            "collapseAllText": "Contraer todo"
+            "collapseAllText": "Contraer todo",
+            "groupSummaryTpl": "Resumen ({name})",
+            "summaryTpl": "Resumen ({store.data.length})"
         }
     },
     "data": {
+        "summary": {
+            "count": "Contar"
+        },
         "validator": {
             "presence": "Debe estar presente",
             "format": "Está en el formato incorrecto",

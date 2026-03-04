@@ -198,19 +198,37 @@
             "grouping": {
                 "panel": {
                     "emptyText": "Arrossegueu una columna aquí per agrupar",
-                    "groupText": "Grup"
+                    "groupText": "Grup",
+                    "groupingPanelText": "Arrossegueu una capçalera de columna aquí per agrupar per aquesta columna",
+                    "showGroupingPanelText": "Mostra el panell d'agrupació",
+                    "hideGroupingPanelText": "Amaga el panell d'agrupació",
+                    "clearGroupText": "Neteja el grup",
+                    "sortAscText": "Ordena ascendent",
+                    "sortDescText": "Ordena descendent",
+                    "moveLeftText": "Mou a l'esquerra",
+                    "moveRightText": "Mou a la dreta",
+                    "moveBeginText": "Mou al principi",
+                    "moveEndText": "Mou al final",
+                    "removeText": "Elimina"
                 }
             },
             "summaries": {
-                "text": "Resum"
+                "text": "Resum",
+                "textNone": "Cap",
+                "summaryText": "Resum"
             }
         },
         "treeGrouped": {
             "expandAllText": "Expandeix tot",
-            "collapseAllText": "Contrau tot"
+            "collapseAllText": "Contrau tot",
+            "groupSummaryTpl": "Resum ({name})",
+            "summaryTpl": "Resum ({store.data.length})"
         }
     },
     "data": {
+        "summary": {
+            "count": "Comptar"
+        },
         "validator": {
             "presence": "Ha d’estar present",
             "format": "Té un format incorrecte",
