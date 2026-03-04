@@ -19,8 +19,23 @@ Ext.i18nextDate = (function() {
             i18next.t('extjs:date.december')
         ];
 
+        Ext.Date.shortMonthNames = [
+            i18next.t('extjs:date.januaryShort'),
+            i18next.t('extjs:date.februaryShort'),
+            i18next.t('extjs:date.marchShort'),
+            i18next.t('extjs:date.aprilShort'),
+            i18next.t('extjs:date.mayShort'),
+            i18next.t('extjs:date.juneShort'),
+            i18next.t('extjs:date.julyShort'),
+            i18next.t('extjs:date.augustShort'),
+            i18next.t('extjs:date.septemberShort'),
+            i18next.t('extjs:date.octoberShort'),
+            i18next.t('extjs:date.novemberShort'),
+            i18next.t('extjs:date.decemberShort')
+        ];
+
         Ext.Date.getShortMonthName = function(month) {
-            return Ext.Date.monthNames[month].substring(0, 3);
+            return Ext.Date.shortMonthNames[month];
         };
 
         Ext.Date.monthNumbers =  {};
@@ -53,8 +68,18 @@ Ext.i18nextDate = (function() {
             i18next.t('extjs:date.saturday')
         ];
 
+        Ext.Date.shortDayNames = [
+            i18next.t('extjs:date.sundayShort'),
+            i18next.t('extjs:date.mondayShort'),
+            i18next.t('extjs:date.tuesdayShort'),
+            i18next.t('extjs:date.wednesdayShort'),
+            i18next.t('extjs:date.thursdayShort'),
+            i18next.t('extjs:date.fridayShort'),
+            i18next.t('extjs:date.saturdayShort')
+        ];
+
         Ext.Date.getShortDayName = function(day) {
-            return Ext.Date.dayNames[day].substring(0, 3);
+            return Ext.Date.shortDayNames[day];
         };
 
         Ext.Date.defaultFormat = i18next.t('extjs:date.defaultFormat');
