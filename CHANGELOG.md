@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.1] - 2026-09-26
+
+### Security
+- `i18next-http-backend` raised to `^3.0.6` (was `^2.0.0`, resolving 2.7.3): fixes
+  [GHSA-q89c-q3h5-w34g](https://github.com/i18next/i18next-http-backend/security/advisories/GHSA-q89c-q3h5-w34g)
+  (CVE-2026-41691), request URLs built from unchecked `lng`/`ns` values (path traversal, SSRF).
+  The `loadPath` function is unchanged: v3 still interpolates `{{lng}}` and `{{ns}}`.
+
 ## [1.0.0] - 2026-03-04
 
 ### Breaking Changes
