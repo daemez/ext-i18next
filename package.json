@@ -64,7 +64,9 @@
         "i18next-localstorage-backend": "^4.0.0"
     },
     "devDependencies": {
+        "@eslint/js": "^9.39.5",
         "eslint": "^9.0.0",
+        "globals": "^16.5.0",
         "prettier": "^3.0.0"
     },
     "scripts": {

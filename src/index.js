@@ -8,13 +8,11 @@ const interop = (m) => m.default || m;
 
 // Expose i18next globally for use in Ext JS components
 // These intentionally omit const/let to create globals
-/* eslint-disable no-implicit-globals, no-undef */
 i18next = require('i18next');
 LanguageDetector = interop(require('i18next-browser-languagedetector'));
 Backend = interop(require('i18next-chained-backend'));
 LocalStorageBackend = interop(require('i18next-localstorage-backend'));
 HTTPBackend = interop(require('i18next-http-backend'));
-/* eslint-enable no-implicit-globals, no-undef */
 
 const _defaults = require('./utils.js').defaults;
 
