@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.2] - 2026-10-02
+
+### Changed
+- `LICENSE`: the copyright holder is the company, Daemez Solucions, S.L., 2021-2026. Still MIT;
+  nothing else changed.
+
 ## [1.0.1] - 2026-09-26
 
 ### Security
