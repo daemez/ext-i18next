@@ -1,5 +1,28 @@
 # Changelog
 
+## [2.0.0] - 2026-10-02
+
+### Breaking Changes
+- i18next is now `^26.4.2`. ext-i18next exposes `i18next` as a global and passes `init()` options
+  through, so its removals reach you: `interpolation.format` is gone (use
+  `i18next.services.formatter.add()`), and `initImmediate` is ignored (use `initAsync`).
+- i18next-http-backend is now `^4.0.2`: it uses the host's `fetch` and no longer bundles a polyfill.
+- i18next-chained-backend is now `^5.0.6`.
+
+### Security
+- i18next `^26.4.2`: fixes
+  [GHSA-6jcc-5g8w-32mx](https://github.com/i18next/i18next/security/advisories/GHSA-6jcc-5g8w-32mx),
+  `addResourceBundle(..., deep, overwrite)` could overwrite shared built-ins (DoS). Not backported to 25.x.
+- i18next-http-backend `^4.0.2`: fixes
+  [GHSA-xvq9-wjp8-hwqf](https://github.com/i18next/i18next-http-backend/security/advisories/GHSA-xvq9-wjp8-hwqf),
+  URL injection through `lng`/`ns` when `loadPath` starts with a placeholder. Not backported to 3.x.
+  The default `loadPath` here starts with a resource path.
+
+### Fixed
+- Grouped grid summary rows (`Ext.grid.column.Groups`) and the Expand all / Collapse all items of the
+  Groups column menu (`Ext.grid.menu.Groups`) are now translated, reusing the `grid.treeGrouped` keys.
+- `npm run lint` works again: ESLint 10 with a flat `eslint.config.js`.
+
 ## [1.0.2] - 2026-10-02
 
 ### Changed
