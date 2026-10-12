@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.1.0] - 2026-10-12
+
+### Changed
+- The package names its maker: `author` is Daemez Solucions, S.L. with https://daemez.com, and the
+  Sencha `creator` is spelled the same way. SBOMs read the manufacturer from these fields.
+
 ## [2.0.0] - 2026-10-02
 
 ### Breaking Changes

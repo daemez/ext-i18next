@@ -1,6 +1,6 @@
 {
     "name": "@daemez/ext-i18next",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "description": "i18next for Ext JS",
     "sencha": {
         "name": "i18next",
@@ -8,10 +8,10 @@
         "alternateName": [
             "daemez-i18next"
         ],
-        "creator": "Daemez Solutions",
+        "creator": "Daemez Solucions, S.L.",
         "summary": "Ext JS i18next",
         "detailedDescription": "i18next for Ext JS locale for localization to a local language",
-        "version": "2.0.0",
+        "version": "2.1.0",
         "compatVersion": "1.0.0",
         "format": "1",
         "output": "${package.dir}/extjs/build",
@@ -50,7 +50,10 @@
         "translation",
         "localization"
     ],
-    "author": "Oscar Gimenez",
+    "author": {
+        "name": "Daemez Solucions, S.L.",
+        "url": "https://daemez.com"
+    },
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/daemez/ext-i18next/issues"
